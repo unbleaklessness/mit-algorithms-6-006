@@ -11,16 +11,3 @@ def insertion_sort(xs):
                 break
             counter += 1
     return xs
-
-xs = list(range(100))
-xss = sorted(xs)
-
-for i in range(10):
-    shuffle(xs)
-    if insertion_sort(xs) != xss:
-        print('Tests failed!')
-        break
-else:
-    print('Tests passed!')
-
-
